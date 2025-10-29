@@ -1,0 +1,145 @@
+        /* Basic Styling for readability */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f4f9; margin: 0; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; min-height: 100vh; }
+        .container { width: 100%; max-width: 800px; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
+        .dashboard { display: none; }
+        #login-page { max-width: 400px; margin: auto; }
+        #login-page {
+            max-width: 400px;
+            margin: auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #login-page h1 {
+            font-size: 24px;
+            color: #1e3a8a; /* Darker blue */
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        #login-page h2 {
+            font-size: 18px;
+            color: #4b5563; /* Gray */
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        h1, h2 { text-align: center; color: #333; }
+        h3 { margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px;}
+        .form-group { margin-bottom: 15px; }
+        .form-row { display: flex; gap: 10px; }
+        .form-row .form-group { flex: 1; text-align: left; }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #374151; /* Darker gray */
+        }
+
+        input[type="email"], input[type="password"], input[type="text"], input[type="date"], input[type="month"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db; /* Light gray */
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="number"]:focus, select:focus, textarea:focus {
+            border-color: #2563eb; /* Blue */
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+            outline: none;
+        }
+
+        textarea { resize: vertical; }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #2563eb; /* Blue */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #1d4ed8; /* Darker blue */
+            transform: translateY(-2px);
+        }
+        button:disabled {
+            background-color: #9ca3af; /* Gray */
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        #app-container {
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+
+        .app-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            background-color: #1e3a8a; /* Dark blue */
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        #user-info {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        #logout-button {
+            background-color: #be123c; /* Red */
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            width: auto;
+            margin-top: 0;
+        }
+
+        #logout-button:hover {
+            background-color: #9f1239; /* Darker red */
+            transform: translateY(-2px);
+        }
+
+        .action-button {
+            width: auto;
+            padding: 10px 16px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .error-message { color: #be123c; font-weight: 500; }
+        .success-message { color: #16a34a; font-weight: 500; }
+        .info-message { color: #4b5563; }
+        .main-content {
+            padding: 24px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #e5e7eb; padding: 12px 16px; text-align: left; font-size: 14px; }
+        th { background-color: #f2f2f2; }
+        td.remarks-cell { font-size: 12px; line-height: 1.4; max-width: 200px; word-wrap: break-word; }
+        .paid { color: green; font-weight: bold; }
+        .unpaid { color: red; font-weight: bold; }
+        .partially-paid { color: #fd7e14; font-weight: bold; }
+        .student-list-container { max-height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; border-radius: 4px; }
+        #fine-summary-container { margin-top: 20px; padding: 15px; border: 1px solid #ffc107; background-color: #fff3cd; border-radius: 5px; }
+        #history-results-display ul { list-style-type: disc; margin-left: 20px; }
+        .main-footer { margin-top: auto; }
+        .impose-fine-form { border: 1px solid #007bff; padding: 20px; border-radius: 8px; margin-top: 15px; background-color: #f8f9fa;}
